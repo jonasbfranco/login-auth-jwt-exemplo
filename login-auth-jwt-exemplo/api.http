@@ -1,0 +1,45 @@
+// Listar toda as transações
+GET http://localhost:3000/transactions
+
+###
+
+// Gravar uma transação
+POST http://localhost:3000/transactions
+content-type: application/json
+
+{
+    "usuario_id": 1,
+    "categoria_id": 2,
+    "tipo": "DESPESA",
+    "descricao": "Mercado 07/09/2026",
+    "valor": 87.00,
+    "data": "2026-09-06",
+    "status": "PENDENTE",
+    "forma_pagamento": "CREDITO"
+}
+
+###
+
+/*
+
+tipo
+---------------
+RECEITA
+DESPESA
+
+status
+---------------
+PENDENTE
+PAGO
+CANCELADO
+
+forma_pagamento
+---------------
+DINHEIRO
+PIX
+DEBITO
+CREDITO
+BOLETO
+TRANSFERENCIA
+
+*/
