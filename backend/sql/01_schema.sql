@@ -36,6 +36,10 @@ CREATE INDEX IF NOT EXISTS idx_usuarios_login_lower ON usuarios (LOWER(login));
 CREATE INDEX IF NOT EXISTS idx_usuarios_email_lower ON usuarios (LOWER(email));
 
 
+CREATE INDEX IF NOT EXISTS idx_categorias_nome_lower ON categorias (LOWER(nome));
+CREATE INDEX IF NOT EXISTS idx_categorias_tipo_lower ON categorias (LOWER(tipo));
+
+
 INSERT INTO categorias (nome, tipo)
 VALUES 
 ('SALARIO', 'RECEITA'),
