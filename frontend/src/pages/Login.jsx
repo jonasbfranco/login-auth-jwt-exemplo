@@ -36,7 +36,7 @@ export default function Login() {
 
   return (
     <main className="min-h-screen bg-slate-950 flex">
-      <section className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950">
+      <section className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-blue-950">
         <div className="absolute -top-28 -left-28 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
 

@@ -3,27 +3,12 @@
  npm create vite@latest .
 ```
 
-### Instalar axios, lucide-react e react-router-dom
+### Instalar axios, lucide-react e react-router
 ```
-npm i axios lucide-react react-router-dom
+npm i axios lucide-react react-router
 ```
 
 ### Instalar Tailwindcss
 ```
 npm install tailwindcss @tailwindcss/vite
-```
-
-### Instalar react-router
-```
-npm i react-router
-```
-
-###
-```
-
-```
-
-###
-```
-
 ```

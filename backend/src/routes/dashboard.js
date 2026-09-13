@@ -13,6 +13,7 @@ router.get("/stats", auth, async (req, res) => {
   try {
     const result = await pool.query(
       `SELECT
+        (SELECT COUNT(*)::int FROM usuarios) AS total_usuarios,
         (SELECT COUNT(*)::int FROM categorias) AS numero_categorias,
         (SELECT COUNT(*)::int FROM usuarios WHERE ativo = 'TRUE') AS usuarios_ativos,
         (SELECT COUNT(*)::int FROM usuarios WHERE ativo = 'FALSE') AS usuarios_inativos`
