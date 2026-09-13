@@ -107,6 +107,7 @@ router.post("/login", async (req, res) => {
     console.error(error);
     return res.status(500).json({ message: "Erro interno ao realizar login." });
   }
+
 });
 
 export default router;

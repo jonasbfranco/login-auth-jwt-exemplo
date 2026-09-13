@@ -21,6 +21,7 @@ router.get("/usuario", async (req, res) => {
     console.error(error);
     return res.status(500).json({ message: "Erro ao consultar usuários." });
   }
+
 });
 
 
@@ -63,6 +64,7 @@ router.post("/usuario", async (req, res) => {
     console.error(error);
     return res.status(500).json({ message: "Erro interno ao salvar os dados deste usuario." });
   }
+
 });
 
 
@@ -104,6 +106,7 @@ router.put("/usuario/:id", async (req, res) => {
       console.error(error);
       return res.status(500).json({ message: "Erro ao atualizar usuario." });
   }
+
 });
 
 
@@ -132,6 +135,7 @@ router.delete("/usuario/:id", async (req, res) => {
       console.error(error);
       return res.status(500).json({ message: "Erro interno ao excluir os dados deste usuario." });
   }
+
 });
 
 
