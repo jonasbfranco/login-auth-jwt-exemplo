@@ -43,7 +43,7 @@ export default function Login() {
         <div className="relative z-10 flex flex-col justify-between p-14 text-white">
           <div>
             <div className="inline-flex items-center rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold tracking-wide backdrop-blur">
-              CPA • Tecnologia
+              JBF • Tecnologia
             </div>
 
             <h1 className="mt-10 max-w-xl text-5xl font-bold leading-tight">
@@ -57,7 +57,7 @@ export default function Login() {
           </div>
 
           <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} CPA. Ambiente corporativo.
+            © {new Date().getFullYear()} JBF. Ambiente corporativo.
           </p>
         </div>
       </section>

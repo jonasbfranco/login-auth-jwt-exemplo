@@ -13,7 +13,10 @@ const Dashboard = () => {
   const user = getCurrentUser();
   const [stats, setStats] = useState({
     usuarios: "-",
-    //usuariosAtivos: "-"
+    usuarios_ativos: "-",
+    usuarios_inativos: "-",
+    despesas_previstas: "-",
+    receitas_previstas: "-"
     //perfis: "-",
     //modulos: "-"
   });
@@ -45,9 +48,9 @@ useEffect(() => {
 
       <section className="flex flex-col justify-center items-start">
         <div className="w-96 h-40">
-          <div className="text-xl mb-4 text-gray-700 items-center">Bem vindo a Dashboard</div>
-          <Link to="/login"><button className="flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-blue-700 cursor-pointer">
-            Login
+          {/* <div className="text-xl mb-4 text-gray-700 items-center">Bem vindo a Dashboard</div> */}
+          <Link to="/home"><button className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-blue-700 cursor-pointer">
+            Home
           </button></Link>
         </div>
       </section>
