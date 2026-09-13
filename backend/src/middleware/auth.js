@@ -14,7 +14,7 @@ async function auth(req, res, next) {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    console.log(decoded)
+    // console.log(decoded)
 
     /* const result = await pool.query(
       `SELECT id, login, role, perfil_id, ativo
